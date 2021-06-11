@@ -1,0 +1,181 @@
+h1 {
+  color: white;
+  text-align: center;
+}
+h2 {
+  color: white;
+  text-align: center;
+}
+h3{
+  font-size: 2em;
+  color: black;
+  text-align: center;
+}
+p {
+  color: black;
+  text-align: left;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: wheat;
+}
+.header{
+  background-color: rgb(26, 23, 23);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.headerNameBox{
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px 25px;
+}
+
+.headerName{
+  margin: 0;
+  color:white;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.headerLinkBox{
+  display: flex;
+  justify-content: space-around;
+}
+
+.headerLinkBox > a{
+  text-decoration: none !important;
+}
+
+.headerLink{
+  margin: 0;
+  padding: 25px 40px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.headerLink:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../photos/background.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+.home_content {
+  padding-left: 7vw;
+  padding-top: 40vh;
+}
+.name {
+  margin: 0;
+  font-size: 4vw;
+}
+.hobby {
+  margin: 0;
+  font-size: 3vw;
+}
+
+.currentRead {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about {
+  margin-left: 135px;
+  margin-right: 135px;
+}
+
+@media only screen and (max-width: 767px) {
+  .about {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .about > p{
+    font-size: 12px;
+  }
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.back-button{
+  position: fixed;
+  z-index: 5;
+  top: 10;
+  color: #d3d3d3;
+  padding: 20px;
+}
+
+.back-button > a{
+  color: #d3d3d3;
+}
+
+.back-button > a > p{
+  color: #d3d3d3;
+  font-weight: bold;
+}
+
+.back-button > a:hover{
+  color: white;
+}
+
+.login-form{
+  background-image: linear-gradient(rgba(256, 256, 256, 0.1), rgba(256, 256, 256, 0.1) );
+  position: relative;
+  padding: 5vw;
+  z-index: 10;
+  border-radius: 20px;
+  max-width: 400px;
+}
+
+.login-form > h3{
+  color: white;
+}
